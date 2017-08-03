@@ -1,7 +1,7 @@
 # Bittrex Command-Line Trader
 ## Andre V. Banks
 
-!!!Project Not Complete!!!
+!!!Project Not Complete!!!  
 A command-line application for Mac OS that enables coin tradring through Bittrex on the CLI. 
 
 ## Why?
