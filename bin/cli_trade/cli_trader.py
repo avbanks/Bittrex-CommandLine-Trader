@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+'''
+  A command line application to trade cryptocurrencies using the Bittrex API
+'''
 
 from bittrex import bittrex as B
 import urllib.request
@@ -15,7 +18,7 @@ account = B.Bittrex(BKEY,BSECRET)
 BUY_ORDERBOOK = 'buy'
 SELL_ORDERBOOK = 'sell'
 BOTH_ORDERBOOK = 'both'
-LOT = 5
+LOT = 5 # Amount in dollars the default trade size should be
 
 CMC = CMC()
 
