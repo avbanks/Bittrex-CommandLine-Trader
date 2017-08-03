@@ -2,7 +2,11 @@
 ## Andre V. Banks
 
 !!!Project Not Complete!!!
-A command-line application for Mac OS that enables coin tradring through Bittrex on the CLI. To run the application it needs to be granted execution permission this can be done by running the following command in the directory of the "cli_trader.py" file  ```
+A command-line application for Mac OS that enables coin tradring through Bittrex on the CLI. 
+
+##Installation
+Make sure you have an API key and secret generated from Bittrex with “Read Info” and “Trade Limit” properties activated.  
+To run the application it needs to be granted execution permission this can be done by running the following command in the directory of the "cli_trader.py" file  ```
 chmod u+x cli_trader.py ```    
 The application can now be run by running the cli_trader.py file  
 ```./cli_trader.py```  
