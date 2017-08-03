@@ -4,9 +4,15 @@
 !!!Project Not Complete!!!
 A command-line application for Mac OS that enables coin tradring through Bittrex on the CLI. 
 
-##Installation
-Make sure you have an API key and secret generated from Bittrex with “Read Info” and “Trade Limit” properties activated.  
-To run the application it needs to be granted execution permission this can be done by running the following command in the directory of the "cli_trader.py" file  ```
+## Installation
+Make sure you have an API key and secret generated from Bittrex with “Read Info” and “Trade Limit” properties activated.  A secrets.py file will need to be generated in the projects bin/cli_trade/ directory to read the API key and secret into into the application.  The file should contain the following contents:  
+```python
+#!/usr/bin/env python
+
+BKEY = 'YOUR_BITTREX_KEY_HERE'
+BSECRET = 'YOUR_BITTREX_SECRET_HERE'  
+```  
+To run the application the ```cli_trader.py``` file needs to be granted execution permission. This can be done by running the following command in the projects ```bin/cli_trade/``` directory ```
 chmod u+x cli_trader.py ```    
 The application can now be run by running the cli_trader.py file  
 ```./cli_trader.py```  
