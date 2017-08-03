@@ -24,7 +24,10 @@ I would recommend creating a symlink of the ```cli_trader.py``` file to ```/usr/
  ```ln -s FULL_PATH/cli_trader.py /user/local/bin/COMMAND_NAME```  
   
 
- replacing 'FULL_PATH' with the full path of the file and 'COMMAND_NAME' with the desired command name. A secrets.py file needs to be created which will hold the API key and secrety generated from Bittrex. The cli_trader.py file contains a global variable 'LOT' this determines what dollar lots the coins should be traded.  The default value is 5 which means coins will be traded in $5 USD lots.  This functionality makes trading between coins a lot easier to deal with.  Due to the extremely volatile nature of Bitcoin I find pricing purchase size in USD a lot easier.    
+ Replacing 'FULL_PATH' with the full path of the file and 'COMMAND_NAME' with the desired command name. The cli_trader.py file contains a global variable 'LOT' this determines what dollar lots the coins should be traded.  The default value is 5 which means coins will be traded in $5 USD lots.  This functionality makes trading between coins a lot easier to deal with.  Due to the extremely volatile nature of Bitcoin I find pricing purchase size in USD a lot easier.    
+
+### Adjusting Trade Size	
+The default trade quantity is a lot size of $5 USD. When commands to buy or sell are used a quantity of lots has to be specified so if you wanted to by 2 lots of Ethereum you would be buying $10 USD worth of Ethereum.  It's my personal preference to trade in $5 USD lots however this can be changed to meet your needs. Default lot size can be changed by altering the LOT constant in the ```cli_trader.py``` file.  
 
 ## Commands
 
