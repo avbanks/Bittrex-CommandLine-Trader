@@ -50,22 +50,28 @@ Balance $90000
 
 ## Buy Order @ ASK Price 
 ### cli_trade -b <ticker> <lots>
-#### UUID of trade will display  
+#### UUID of trade will display if successful if not a trade not filled message will appear 
 
 ## Buy Order @ BID Price  
 ### cli_trade -bbid <ticker> <lots>  
+#### UUID of trade will display if successful if not a trade not filled message will appear 
 
 ## Sell order @ BID Price
 ### cli_trade -s <ticker> <lots>  
+#### UUID of trade will display if successful if not a trade not filled message will appear 
+
 
 ## Sell order @ ASK Price
 ### cli_trade -s <ticker> <lots>  
+#### UUID of trade will display if successful if not a trade not filled message will appear 
 
-## Sell All Quantity of A Coin In The Portfolio (Sells into Bitcoin, won't work for Bitcoin)
+## Sell All Quantity of A Coin In The Portfolio 
 ### cli_trade -sa <ticker>  
+#### Will sell the coin into Bitcoin, This command will not work on Bitcoin
 
 ## Get All Open Orders
 ### cli_trade -oo 
+#### Displays the UUID of all open orders
 
 
 
