@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 '''
   A command line application to trade cryptocurrencies using the Bittrex API
+  Written by Andre V. Banks
+  Use at your own risk
 '''
 
 from bittrex import bittrex as B
@@ -250,19 +252,19 @@ else:
             else:
                 print('You must specify currency pair')
 
-        if command == 'BA':
+     '''if command == 'BA':
             if sys.argv[2]:
                 currency = sys.argv[2].upper()
                 buy_Cur(currency,buyall=True)
             else:
-                print('You must specify currency pair')
+                print('You must specify currency pair') '''
 
-        if command == 'N':
+     '''if command == 'N':
             if sys.argv[2]:
                 coin_name = sys.argv[2].upper()
                 coin_inf = get_coin(coin_name)
                 for k in coin_inf.keys():
-                    print(k,coin_inf[k])
+                    print(k,coin_inf[k])'''
 
         if command == 'BBID':
             if sys.argv[2]:

@@ -4,6 +4,9 @@
 !!!Project Not Complete!!!
 A command-line application for Mac OS that enables coin tradring through Bittrex on the CLI. 
 
+## Why?
+Bittrex is one of the best exchanges for trading crypto coins however they face the same problems as other exchanges.  The user-interface isn't that great, login process isn't convinent for quick trading, the website is sometimes down for maintainance, and trading amount and price is specified in Bitcoin instead of fiat currency. This application is intended to allow users to complete trades in under 5 seconds a feat which is nearly impossible in Bittrex due to the login process and UI. This is necessary when trading crypto coins due to their volatile trading nature. 
+
 ## Installation
 Make sure you have an API key and secret generated from Bittrex with “Read Info” and “Trade Limit” properties activated.  A ```secrets.py``` file will need to be created in the projects ```bin/cli_trade/``` directory to read the API key and secret into into the application.  The file should contain the following contents:  
 ```python
@@ -30,9 +33,10 @@ I would recommend creating a symlink of the ```cli_trader.py``` file to ```/usr/
 The default trade quantity is a lot size of $5 USD. When commands to buy or sell are used a quantity of lots has to be specified so if you wanted to by 2 lots of Ethereum you would be buying $10 USD worth of Ethereum.  It's my personal preference to trade in $5 USD lots however this can be changed to meet your needs. Default lot size can be changed by altering the LOT constant in the ```cli_trader.py``` file.  
 
 ## Commands
+* For the documentation I've named the command cli_trade however this can changed to your liking, if speed is a concern changing it to a single letter could be ideal.  
 
 ## Default Functionality
-### ./cli_trader.py (no arguments)
+### cli_trade (no arguments)
 The default functionality will cause all purchased coins to be displayed with each positions total value and the total value of the portfolio displayed.
 The the coins rank, ticker, 1hr, 24hr, and 7day change will be displayed.
 
@@ -44,8 +48,25 @@ Balance $90000
 
 ![Cli Defualt Functionality](https://media.giphy.com/media/l0EoBilWm7mOSksta/giphy.gif)
 
-## Buy Order @ ASK Price
-### ./cli_trader.py --b <ticker> <lots>
+## Buy Order @ ASK Price 
+### cli_trade -b <ticker> <lots>
+#### UUID of trade will display  
+
+## Buy Order @ BID Price  
+### cli_trade -bbid <ticker> <lots>  
+
+## Sell order @ BID Price
+### cli_trade -s <ticker> <lots>  
+
+## Sell order @ ASK Price
+### cli_trade -s <ticker> <lots>  
+
+## Sell All Quantity of A Coin In The Portfolio (Sells into Bitcoin, won't work for Bitcoin)
+### cli_trade -sa <ticker>  
+
+## Get All Open Orders
+### cli_trade -oo 
+
 
 
 
