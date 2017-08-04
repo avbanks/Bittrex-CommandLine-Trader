@@ -252,14 +252,14 @@ else:
             else:
                 print('You must specify currency pair')
 
-     '''if command == 'BA':
+        '''if command == 'BA':
             if sys.argv[2]:
                 currency = sys.argv[2].upper()
                 buy_Cur(currency,buyall=True)
             else:
                 print('You must specify currency pair') '''
 
-     '''if command == 'N':
+        '''if command == 'N':
             if sys.argv[2]:
                 coin_name = sys.argv[2].upper()
                 coin_inf = get_coin(coin_name)
@@ -279,6 +279,7 @@ else:
                 sell_Cur(currency,market_price=False)
             else:
                 print('You must specify a coin')
+        
         if command == 'OO':
             if sys.argv[2]:
                 market = sys.argv[2].upper()
