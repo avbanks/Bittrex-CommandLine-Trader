@@ -1,7 +1,6 @@
 # Bittrex Command-Line Trader
 ## Andre V. Banks
 
-!!!Project Not Complete!!!  
 A command-line application for Mac OS that enables coin tradring through Bittrex on the CLI. 
 
 ## Why?
@@ -83,5 +82,5 @@ Balance $90000
 ## Help  
 ### cli_trade -help
 ### Displays all available commands  
-![Cli Get Help](https://image.ibb.co/hy0KnF/Screen_Shot_2017_08_05_at_11_20_35_PM.png)
+![Cli Get Help](https://image.ibb.co/hzu4nF/Screen_Shot_2017_08_05_at_11_30_48_PM.png)
 
