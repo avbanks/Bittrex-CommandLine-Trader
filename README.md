@@ -59,7 +59,7 @@ Balance $90000
 ## Sell order @ BID Price
 ### cli_trade -s ticker lots  
 #### UUID of trade will display if successful if not a trade not filled message will appear  
-![Cli Sell Order @ Bid](https://image.ibb.co/b1hDga/Screen_Shot_2017_08_05_at_10_05_19_PM.png) 
+![Cli Sell Order @ Bid](https://image.ibb.co/bHwH7F/Screen_Shot_2017_08_05_at_10_11_09_PM.png) 
 
 
 ## Sell order @ ASK Price
