@@ -51,6 +51,8 @@ Balance $90000
 ## Buy Order @ ASK Price 
 ### cli_trade -b ticker lots
 #### UUID of trade will display if successful if not a trade not filled message will appear 
+![Cli Buy Order @ Ask](https://image.ibb.co/bHwH7F/Screen_Shot_2017_08_05_at_10_11_09_PM.png) 
+
 
 ## Buy Order @ BID Price  
 ### cli_trade -bbid ticker lots  
@@ -59,22 +61,25 @@ Balance $90000
 ## Sell order @ BID Price
 ### cli_trade -s ticker lots  
 #### UUID of trade will display if successful if not a trade not filled message will appear  
-![Cli Sell Order @ Bid](https://image.ibb.co/bHwH7F/Screen_Shot_2017_08_05_at_10_11_09_PM.png) 
+![Cli Sell Order @ Bid](https://image.ibb.co/hRr0SF/Screen_Shot_2017_08_05_at_10_15_57_PM.png)
 
 
 ## Sell order @ ASK Price
-### cli_trade -s ticker lots  
-#### UUID of trade will display if successful if not a trade not filled message will appear 
+### cli_trade -sask ticker lots  
+#### UUID of trade will display if successful if not a trade not filled message will appear  
+![Cli Sell Order @ Ask](https://image.ibb.co/g2WaSF/Screen_Shot_2017_08_05_at_10_27_04_PM.png) 
 
 ## Sell All Quantity of A Coin In The Portfolio 
 ### cli_trade -sa ticker  
-#### Will sell the coin into Bitcoin, This command will not work on Bitcoin
+#### Will sell the coin into Bitcoin, This command will not work on Bitcoin  
+![Cli Sell All Order @ Bid](https://image.ibb.co/caAoEv/Screen_Shot_2017_08_05_at_10_18_31_PM.png)
 
 ## Get All Open Orders
-### cli_trade -oo 
-#### Displays the UUID of all open orders
-
-
-
-
+### cli_trade -oo market 
+#### Displays the UUID of all open orders for specified market  
+![Cli Get Open Orders for specified market](https://image.ibb.co/jnFKnF/Screen_Shot_2017_08_05_at_10_56_32_PM.png)
+  
+## Help
+### cli_trade -help
+### Displays all available commands
 

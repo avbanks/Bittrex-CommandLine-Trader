@@ -12,7 +12,6 @@ from functools import reduce
 from urllib.parse import quote
 from coinmarketcap import Market as CMC
 import sys
-import pprint
 from secrets import BKEY, BSECRET
 
 account = B.Bittrex(BKEY,BSECRET)
@@ -206,7 +205,10 @@ def get_open_orders(market):
     param market optional type string
     rtype dict
     '''
-    return account.get_open_orders(market)
+    orders = account.get_open_orders(market)
+    if orders['result']:
+        return orders['result']
+    return None 
 
 '''
     format: balance.py -b eth 10
@@ -279,13 +281,24 @@ else:
                 sell_Cur(currency,market_price=False)
             else:
                 print('You must specify a coin')
-        
+
         if command == 'OO':
             if sys.argv[2]:
                 market = sys.argv[2].upper()
                 print(get_open_orders(market))
             else:
                 print("You must specifiy a market ex: BTC-ETH")
+
+        if command == 'HELP':
+            print('List of commands : \n \
+                  [command_name] -b <ticker> <lots> \n \
+                  [command_name] -bbid <ticker> <lots> \n \
+                  [command_name] -s <ticker> <lots> \n \
+                  [command_name] -sask <ticker> <lots> \n \
+                  [command_name] -sa <ticker> \n \
+                  [command_name] -oo <market> \n \
+                  ')
+
     else:
         print('commands start with single dash')
 
