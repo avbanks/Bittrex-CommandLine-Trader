@@ -80,7 +80,8 @@ Balance $90000
 #### Displays the UUID of all open orders for specified market  
 ![Cli Get Open Orders for specified market](https://image.ibb.co/jnFKnF/Screen_Shot_2017_08_05_at_10_56_32_PM.png)
   
-## Help
+## Help  
 ### cli_trade -help
-### Displays all available commands
+### Displays all available commands  
+![Cli Get Help](https://image.ibb.co/hy0KnF/Screen_Shot_2017_08_05_at_11_20_35_PM.png)
 
