@@ -46,7 +46,7 @@ Rank 1 | 1 HR %10 | 24HR %20 | 7D %50
 ]==========================================  
 Balance $90000
 
-![Cli Defualt Functionality](https://media.giphy.com/media/l0EoBilWm7mOSksta/giphy.gif)
+![Cli Defualt Functionality](https://media.giphy.com/media/26n6EtVM4DQyQvoti/giphy.gif)
 
 ## Buy Order @ ASK Price 
 ### cli_trade -b ticker lots
