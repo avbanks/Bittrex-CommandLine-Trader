@@ -190,6 +190,7 @@ def sell_Cur(currency, lots=1, sellall=False, market_price=True):
         price = get_Bid(currency)
     if sellall:
         qty = get_Balance(currency)
+
     else:
         qty = round(get_btc_lot_price_usd(lots)/price, 6)
     trade = account.sell_limit(market, qty, price)
